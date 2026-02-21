@@ -1,9 +1,9 @@
-* --- Global & Layout --- */
+/* --- Global & Layout --- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* Makes padding not affect total width */
-  outline: 1px solid red !important;
+  
 }
 
 #root {
@@ -352,14 +352,14 @@ dl {
 }
 /* --- Footer --- */
 .footer {
-    /* Fixed path and added fallback color */
-    background: linear-gradient(rgba(233, 184, 135, 0.8), rgba(241, 193, 144, 0.8)), url("/assets/foote.jpg") #ec7e09;
+    /* Fixed path: removed leading slash from url */
+    background: linear-gradient(rgba(233, 184, 135, 0.8), rgba(241, 193, 144, 0.8)), url("assets/foote.jpg") #ec7e09;
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 5%; /* Shorthand for top/bottom and sides */
+    padding: 2rem 5%; 
     gap: 12px;
 }
 
