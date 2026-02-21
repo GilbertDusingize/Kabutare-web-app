@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import ContactForm from "./ContactForm";
 
 function Contacts() {
   return (
@@ -9,9 +10,8 @@ function Contacts() {
           Contact <span> Us</span>
         </h1>
         <p className="section-desc">
-          Bismilah Restaurant is open 24 hours/7 days. Anyone who needs a
-          service at any time is warmly welcome. Don't hesitate to contact us
-          on our official contacts.
+          Kabutare is located in Huye South District, Rwanda. You can reach us
+          through the following contacts: 0788840076 or visit our social media pages.
         </p>
 
         <div className="section-contact__info-items">
@@ -43,6 +43,7 @@ function Contacts() {
           </div>
         </div>
       </div>
+      {/* Contact Form Section 
       <form className="section-about__form" action="#" onSubmit={(e) => e.preventDefault()}>
         <input type="text" className="text-field" placeholder="Your name" />
         <input type="email" className="text-field" placeholder="Your Email" />
@@ -55,7 +56,8 @@ function Contacts() {
         <button className="section-contact__form-button secondary-button">
           Send message
         </button>
-      </form>
+      </form>*/}
+      <ContactForm />
       {/* Map Section */}
 <div className="section-contact__map">
   <iframe 

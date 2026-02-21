@@ -353,7 +353,7 @@ dl {
 /* --- Footer --- */
 .footer {
     /* Fixed path and added fallback color */
-    background: linear-gradient(rgba(255,126,0,0.8), rgba(255,126,0,0.8)), url("/images/table.JPG") #ff7e00;
+    background: linear-gradient(rgba(233, 184, 135, 0.8), rgba(241, 193, 144, 0.8)), url("/assets/foote.jpg") #ec7e09;
     background-size: cover;
     background-position: center;
     display: flex;
