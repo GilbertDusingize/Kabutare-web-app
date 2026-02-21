@@ -234,7 +234,7 @@ dl {
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
   padding: 20px;
-  width: 240px; /* Slightly wider for better text fit */
+  width: 200px; /* Slightly wider for better text fit */
   transition: transform 0.2s;
 }
 

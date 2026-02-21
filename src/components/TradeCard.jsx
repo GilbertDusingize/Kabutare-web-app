@@ -12,7 +12,7 @@ function TradeCard(props) {
       <dt>
         <span className="emoji" role="img" aria-label={props.name}>
           {/* You could add an emoji field in your data later! */}
-          🛠️ 
+          {props.emoji}
         </span>
         <span>{props.name}</span>
       </dt>

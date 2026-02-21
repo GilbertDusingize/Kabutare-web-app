@@ -3,11 +3,11 @@ import '../App.css'; // Importing our custom CSS file
 
 const About = () => {
   const departments = [
-    { name: "Computer Science", icon: "💻" },
-    { name: "Electronics & Telecommunication", icon: "📡" },
-    { name: "Masonry", icon: "🧱" },
-    { name: "Welding", icon: "🛠️" },
-    { name: "Culinary Arts", icon: "🍳" }
+    { name: "Agriculture", icon: "🚜" },
+    { name: "Animal Health", icon: "🐄" },
+    { name: "Forestry", icon: "🌳" },
+    { name: "Food Processing", icon: "🏭" },
+    { name: "Accounting", icon: "💸" }
   ];
 
   return (
@@ -49,7 +49,7 @@ const About = () => {
 
       {/* Departments Section */}
       <section className="departments-section">
-        <h2>Our Departments</h2>
+        <h2>Our Trades</h2>
         <div className="dept-grid">
           {departments.map((dept, index) => (
             <div key={index} className="dept-card">
