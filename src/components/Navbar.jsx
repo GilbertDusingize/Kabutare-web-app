@@ -10,6 +10,7 @@ function Navbar({ isOpen, setIsOpen }) {
         <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
         <li><Link to="/academics" onClick={() => setIsOpen(false)}>Academics</Link></li>
         <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
+        <li><Link to="/announcements" onClick={() => setIsOpen(false)}>Anouncements</Link></li>
       </ul>
     </nav>
   );

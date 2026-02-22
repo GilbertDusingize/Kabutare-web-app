@@ -22,6 +22,7 @@ function Header() {
           <span className="bar"></span>
           <span className="bar"></span>
           <span className="bar"></span>
+          <span className="bar"></span>
         </button>
 
         {/* Pass the state to Navbar */}
