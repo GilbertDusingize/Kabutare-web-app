@@ -1,19 +1,15 @@
-
-import { Link } from "react-router-dom";
-
-// RIGHT (Matches the Route path)
+import { Link } from 'react-router-dom';
 import React from "react";
 
-function Navbar() {
+function Navbar({ isOpen, setIsOpen }) {
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${isOpen ? 'active' : ''}`}>
       <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-     <li><Link to="/academics">Academics</Link></li>
-       <li><Link to="/online">Online Applications</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-        <li><Link to="/announcements">Announcements</Link></li>
+        {/* We call setIsOpen(false) so the menu closes when a link is clicked */}
+        <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>
+        <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
+        <li><Link to="/academics" onClick={() => setIsOpen(false)}>Academics</Link></li>
+        <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
       </ul>
     </nav>
   );
